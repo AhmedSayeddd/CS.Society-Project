@@ -1,2 +1,2 @@
 # Demo
-https://tarek-salamaa.github.io/CS.Society-Project/
+https://Ahmed-Sayed.github.io/CS.Society-Project/
