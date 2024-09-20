@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="742" height="425" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 742 425">
+  <defs>
+    <linearGradient id="linear-gradient" x1="358.33" y1="259.34" x2="366.41" y2="433.55" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".47" stop-color="#333"/>
+      <stop offset=".82" stop-color="gray"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="416.17" y1="451.17" x2="355.87" y2="334.55" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".53" stop-color="#333"/>
+      <stop offset=".82" stop-color="gray"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="493.63" y1="103.62" x2="198.28" y2="259.37" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".13" stop-color="#333"/>
+      <stop offset=".82" stop-color="gray"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="353.61" y1="-65.92" x2="375.62" y2="390.96" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".45" stop-color="#16243a"/>
+      <stop offset=".82" stop-color="#23354f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="123.13" y1="112.77" x2="650.18" y2="68.27" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".45" stop-color="#f3bd00"/>
+      <stop offset=".82" stop-color="#444b5c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="637.91" y1="241.02" x2="440.64" y2="237.34" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset=".54" stop-color="#f3bd00"/>
+      <stop offset=".63" stop-color="#444b5c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="225.92" y1="80.31" x2="-35.87" y2="158.79" xlink:href="#linear-gradient-5"/>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <rect x="-11" y="-9" width="754" height="442.55" style="fill: #2a59be;"/>
+  </g>
+  <g id="path">
+    <path d="M332.57,410.26l-55.26-11.39c-.72-.15-1.46-.17-2.19-.05l-109.28,17.62c-.9,.14-1.83,.08-2.7-.18l-126.79-37.85c-6.3-1.88-5.55-11.03,.97-11.87l340.93-42.39c.72-.09,1.44-.05,2.15,.11l119.91,27.84c6.5,1.51,6.18,10.88-.41,11.94l-108.7,17.41c-6.76,1.08-6.86,10.78-.12,12h0c6.87,1.24,6.57,11.2-.36,12.03l-48.58,5.8" style="fill: #13071c; opacity: .38;"/>
+  </g>
+  <g id="Layer_9" data-name="Layer 9">
+    <polygon points="406.36 319.89 398.59 364.41 397.17 372.63 319.2 390.87 320.37 375.38 334.48 328.78 406.36 319.89" style="fill: url(#linear-gradient);"/>
+    <path d="M359.89,410.55v7.6s-55.02-14.89-58.84-20.6c-3.8-5.7,1.78-64.99,1.78-64.99l31.65-3.78-12.02,52.19-.5,3.03-.49,2.97-.59,3.62c4.81,4.82,30.7,14.92,37.14,18.84,.1,.07,.21,.13,.31,.19h0c.1,.06,.19,.11,.28,.17,.1,.06,.18,.11,.26,.15,.65,.38,1.01,.6,1.01,.6Z" style="fill: #2e2f3a;"/>
+    <path d="M449.29,391.53l-89.4,19.02s-.36-.22-1.01-.6c-.08-.05-.16-.1-.26-.15-.09-.06-.18-.11-.28-.17h0c-.1-.06-.21-.12-.31-.19-6.44-3.93-32.32-14.02-37.14-18.84l.23-.68,76.41-18.15,51.77,19.77Z" style="fill: url(#linear-gradient-2);"/>
+    <path d="M161.36,48.33l-14.08,6.33-2.54,275.03c-.09,9.16,5.81,17.48,14.63,19.97,1.37,.39,2.87,.73,4.49,1.01l-2.5-302.34Z" style="fill: #2e2f3a;"/>
+    <path d="M147.39,55.86s-1.06-13.62,8.23-15.52c13.36-2.73,397.99-10.81,397.99-10.81,0,0,10.98,0,16.47,5.49l-398.11,15.37c-5.28,.2-13.61-1.18-10.86,12.12" style="fill: #2e2f3a;"/>
+    <path d="M572.89,42.75l-11.78,249.46c-.24,4.88-3.47,8.83-7.68,9.34l-385.57,48.96c-5.14,.65-9.6-3.99-9.58-9.93l1.19-284.44c.02-5.35,3.71-9.73,8.37-9.88l41.43-1.47,10.9-.39,68.62-2.42,23.78-.84,238.5-8.42h.04l12.88-.45c5.05-.17,9.17,4.66,8.89,10.47Z" style="fill: url(#linear-gradient-3);"/>
+    <path d="M565.17,52.95l-.43,8.68-2.96,61.07-2.07,42.47-2.01,41.45-3.84,78.94c-.24,4.53-3.34,8.22-7.4,8.72l-93.27,11.5-130.79,16.12-84.31,10.38-62.02,7.64c-4.92,.6-9.24-3.71-9.21-9.26l.04-11.72,.39-91.89,.71-161.63c.02-4.98,3.58-9.06,8.05-9.21l120.85-4.14,157.86-5.39,80.9-2.78,20.98-.71c4.88-.17,8.83,4.34,8.55,9.78Z" style="fill: url(#linear-gradient-4);"/>
+    <polygon points="359.89 410.55 449.29 391.53 449.29 397.24 359.89 418.16 359.89 410.55" style="fill: #2e2f3a;"/>
+  </g>
+  <g id="Layer_14" data-name="Layer 14">
+    <line x1="390.23" y1="297.13" x2="594.37" y2="275.79" style="fill: none;"/>
+  </g>
+  <g id="Layer_11" data-name="Layer 11">
+    <polygon points="146 159 160 160 168 155 208.66 136.37 393 104 174 115 146 121 146 159" style="fill: #13071c; opacity: .38;"/>
+    <polygon points="176.97 91 502 75 502 98 178.47 116 176.97 91" style="fill: url(#linear-gradient-5);"/>
+    <polygon points="480.68 201.69 566.61 198.29 563.51 265.95 477.83 271.67 480.68 201.69" style="fill: #13071c; opacity: .38;"/>
+    <polygon points="530.91 204 526.63 273.97 516.63 272.54 520.91 204 530.91 204" style="fill: url(#linear-gradient-6);"/>
+    <polygon points="530.91 204 658 201.14 655.14 263.98 526.63 273.97 530.91 204" style="fill: #f3bd00;"/>
+    <polygon points="284 196 284 209 440 197 440 185 284 196" style="fill: #f3bd00;"/>
+    <polygon points="284 173 284 186 440 176 440 164 284 173" style="fill: #f3bd00;"/>
+    <polygon points="284 219 284 232 439 219 439 207 284 219" style="fill: #f3bd00;"/>
+    <polygon points="177.97 91 64 107.39 64.99 145 178.47 116 177.97 91" style="fill: url(#linear-gradient-7);"/>
+    <polygon points="59 107 175 89 502 75 177.97 92 65 108.39 59 107" style="fill: #f3bd00;"/>
+    <polygon points="64.99 145 60 144 59 107 65 108.39 64.99 145" style="fill: #f3bd00;"/>
+    <circle cx="187" cy="70" r="6" style="fill: #f3bd00;"/>
+    <circle cx="205" cy="69" r="6" style="fill: #f3bd00;"/>
+    <circle cx="222" cy="69" r="6" style="fill: #f3bd00;"/>
+    <polygon points="281 186 268 187 268 174 281 173 281 186" style="fill: #f3bd00;"/>
+    <polygon points="281 209 268 210 268 197 281 196 281 209" style="fill: #f3bd00;"/>
+    <polygon points="281 232 268 233 268 220 281 219 281 232" style="fill: #f3bd00;"/>
+  </g>
+</svg>

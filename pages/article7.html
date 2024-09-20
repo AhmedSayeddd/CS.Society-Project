@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide to Writing Semantic HTML</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./learningPaths.html">Learning Paths</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./explore.html">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="./login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start  Artcil -->
+    <div class="art">
+      <div class="container">
+        <div class="head-of-art mt-5 mb-4">
+          <div class="tags">
+            <a class="pt-1 pb-1 pe-3 px-3" href="#">Accessibility</a>
+          </div>
+          <h1 class="my-4">Guide to Writing Semantic HTML</h1>
+          <div class="date-and-auther d-flex gap-2 flex-wrap">
+            <span class="auther">
+              Writed By
+              <span class="name">Tarek Salama</span>
+            </span>
+            -
+            <span class="date-at">
+              At
+              <span class="date">Feb 25, 2023</span>
+            </span>
+          </div>
+        </div>
+        <div class="info">
+          <p>
+            If you’re new to web development, you may have heard the term
+            “Semantic HTML” and wondered what it means. Simply put, Semantic
+            HTML refers to the use of HTML markup to convey the meaning of the
+            content on a web page, rather than just its appearance.
+          </p>
+          <p>
+            This approach has several benefits. First, it helps search engines
+            and other technologies understand the structure and purpose of the
+            content on your site. Second, it makes your content more accessible
+            to people who use assistive technologies to navigate the web. And
+            third, it makes your code easier to read and maintain, since the
+            purpose of each element is clear.
+          </p>
+          <p>
+            In this article, we’ll take a look at some of the most common
+            semantic HTML tags and how to use them effectively.
+          </p>
+          <p>
+            Python is useful for various DevOps tools, such as configuration
+            management and package management tools like Ansible and SaltStack.
+            It is also used to create command-line interfaces like the Azure CLI
+            and AWS CLI. Another advantage of Python is that it is easy to learn
+            compared to other programming languages.
+          </p>
+          <h2>Header</h2>
+          <p>
+            The <span>&#60;header&#62;</span> tag is used to mark up the top
+            section of a web page, which typically includes the main title or
+            logo, navigation links, and other elements that are common to every
+            page on the site. By using the <span>&#60;header&#62;</span> tag,
+            you can create a clear separation between the header and the main
+            content of your page, making it easier for users to understand and
+            navigate your website.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b">&lt;!-- Non-semantic header --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">class</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">header</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h1</span><span style="color:#f6f6f4">&gt;My Site&lt;/</span><span style="color:#f286c4">h1</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">nav</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Home&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;About&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Contact&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;/</span><span style="color:#f286c4">nav</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b">&lt;!-- Semantic header --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">header</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h1</span><span style="color:#f6f6f4">&gt;My Site&lt;/</span><span style="color:#f286c4">h1</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">nav</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">ul</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">      &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Home&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">      &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;About&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">      &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Contact&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;/</span><span style="color:#f286c4">ul</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;/</span><span style="color:#f286c4">nav</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">header</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Navigation</h2>
+          <p>
+            The <span>&#60;nav&#62;</span> tag is used to mark up a section of a
+            web page that contains navigation links. By using the
+            <span>&#60;nav&#62;</span> tag, you can indicate to both users and
+            search engines that this section of your website is specifically
+            designed for navigation.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b">&lt;!-- Non-semantic navigation --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">class</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">navigation</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Home&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;About&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Contact&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b">&lt;!-- Semantic navigation --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">nav</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">ul</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Home&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;About&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Contact&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;/</span><span style="color:#f286c4">ul</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">nav</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Main</h2>
+          <p>
+            The <span>&#60;main&#62;</span> tag is used to mark up the main
+            content area of a web page. By using the
+            <span>&#60;main&#62;</span> tag, you can make it clear to both users
+            and search engines which part of your page contains the main
+            content.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b">&lt;!-- Non-semantic main content --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">class</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">main-content</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;About Us&lt;/</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Welcome to our website. We are a company that specializes in widgets.&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b">&lt;!-- Semantic main content --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">main</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;About Us&lt;/</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Welcome to our website. We are a company that specializes in widgets.&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">main</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Article</h2>
+          <p>
+            The <span>&#60;article&#62;</span> tag is used to represent a
+            standalone piece of content, such as a blog post, news article, or
+            product review. The content within the
+            <span>&#60;article&#62;</span> tag should be self-contained and
+            meaningful, and can include headings, paragraphs, images, and other
+            types of content.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b">&lt;!-- Non-semantic article --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">class</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">article</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;How to Make a Widget&lt;/</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Widgets are great. Here's how to make one.&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b">&lt;!-- Semantic article --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">article</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;How to Make a Widget&lt;/</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Widgets are great. Here's how to make one.&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">article</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Aside</h2>
+          <p>
+            The <span>&#60;aside&#62;</span> tag is used to mark up content that
+            is related to the main content on a web page but is not an integral
+            part of it. This might include things like supplementary
+            information, advertisements, or related articles.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">article</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;Article Title&lt;/</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Article content goes here&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;/</span><span style="color:#f286c4">article</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">aside</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">h3</span><span style="color:#f6f6f4">&gt;Related Articles&lt;/</span><span style="color:#f286c4">h3</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;</span><span style="color:#f286c4">ul</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">      &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Article 1&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">      &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Article 2&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">      &lt;</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;&lt;</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">href</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">#</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;Article 3&lt;/</span><span style="color:#f286c4">a</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">li</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">    &lt;/</span><span style="color:#f286c4">ul</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;/</span><span style="color:#f286c4">aside</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Section</h2>
+          <p>
+            The <span>&#60;section&#62;</span> tag is used to mark up sections
+            of a web page that are thematically grouped together. This might
+            include things like chapters or sections of a long article, or
+            different parts of a product page.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">section</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;Section Title&lt;/</span><span style="color:#f286c4">h2</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Section content goes here&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">section</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Footer</h2>
+          <p>
+            The <span>&#60;footer&#62;</span> tag is used to mark up the bottom
+            section of a web page, which might include things like copyright
+            information, contact details, or links to social media profiles.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b">&lt;!-- Non-semantic footer --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">class</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">footer</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span><span style="color:#bf9eee">&amp;copy;</span><span style="color:#f6f6f4"> 2021 My Site&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">div</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b">&lt;!-- Semantic footer --&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">footer</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span><span style="color:#bf9eee">&amp;copy;</span><span style="color:#f6f6f4"> 2021 My Site&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">footer</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Details and Summary</h2>
+          <p>
+            The <span>&#60;details&#62;</span> and
+            <span>&#60;summary&#62;</span> tags are used to mark up a
+            collapsible section of content. The
+            <span>&#60;summary&#62;</span> tag is used to mark up the title of
+            the section, and the <span>&#60;details&#62;</span> tag is used to
+            mark up the content itself.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">details</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">summary</span><span style="color:#f6f6f4">&gt;Click to expand&lt;/</span><span style="color:#f286c4">summary</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Content goes here&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">details</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Figure and Figcaption</h2>
+          <p>
+            The <span>&#60;figure&#62;</span> and
+            <span>&#60;figcaption&#62;</span> tags are used to mark up a
+            self-contained piece of content that is referenced from the main
+            content of a web page. The <span>&#60;figure&#62;</span> tag is used
+            to mark up the content itself, and the
+            <span>&#60;figcaption&#62;</span> tag is used to mark up a caption
+            or description for the content.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">figure</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">img</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">src</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">image.jpg</span><span style="color:#dee492">"</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">alt</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">Image description</span><span style="color:#dee492">"</span><span style="color:#f6f6f4"> /&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">  &lt;</span><span style="color:#f286c4">figcaption</span><span style="color:#f6f6f4">&gt;Image caption&lt;/</span><span style="color:#f286c4">figcaption</span><span style="color:#f6f6f4">&gt;</span></span>
+                <span class="line"><span style="color:#f6f6f4">&lt;/</span><span style="color:#f286c4">figure</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Mark</h2>
+          <p>
+            The <span>&#60;mark&#62;</span> tag is used to mark up text that has
+            been highlighted for some reason. This might include things like
+            search results, or text that has been highlighted by a user.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;Here is some &lt;</span><span style="color:#f286c4">mark</span><span style="color:#f6f6f4">&gt;highlighted&lt;/</span><span style="color:#f286c4">mark</span><span style="color:#f6f6f4">&gt; text.&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Time</h2>
+          <p>
+            The <span>&#60;time&#62;</span> tag is used to mark up a date or
+            time. By using the <span>&#60;time&#62;</span> tag, you can make it
+            easier for search engines and other technologies to understand the
+            meaning of the content on your page.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;The event will take place on &lt;</span><span style="color:#f286c4">time</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">datetime</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">2021-01-01</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;January 1st, 2021&lt;/</span><span style="color:#f286c4">time</span><span style="color:#f6f6f4">&gt;.&lt;/</span><span style="color:#f286c4">p</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Progress</h2>
+          <p>
+            The <span>&#60;progress&#62;</span> tag is used to mark up a
+            progress bar. By using the <span>&#60;progress&#62;</span> tag, you
+            can make it easier for users to understand the progress of a task.
+          </p>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#f6f6f4">&lt;</span><span style="color:#f286c4">progress</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">value</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">50</span><span style="color:#dee492">"</span><span style="color:#f6f6f4"> </span><span style="color:#62e884;font-style:italic">max</span><span style="color:#f286c4">=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">100</span><span style="color:#dee492">"</span><span style="color:#f6f6f4">&gt;&lt;/</span><span style="color:#f286c4">progress</span><span style="color:#f6f6f4">&gt;</span></span></code></pre>
+          </div>
+          <h2>
+            What about <span>&#60;div&#62;</span> and
+            <span>&#60;span&#62;</span>?
+          </h2>
+          <p>
+            The <span>&#60;div&#62;</span> and <span>&#60;span&#62;</span> tags
+            are not semantic tags. They are used to mark up generic content
+            areas, and do not convey any specific meaning. You should only use
+            these tags if you have no other option.
+          </p>
+          <h2>Summary</h2>
+          <p>
+            In this lesson, you learned about semantic HTML tags, and how they
+            can be used to make your web pages more accessible and easier to
+            understand. You also learned about some of the most commonly used
+            semantic tags, including <span>&#60;header&#62;</span>,
+            <span>&#60;nav&#62;</span>, <span>&#60;main&#62;</span>,
+            <span>&#60;article&#62;</span>, <span>&#60;aside&#62;</span>,
+            <span>&#60;section&#62;</span>, <span>&#60;footer&#62;</span>,
+            <span>&#60;details&#62;</span>, <span>&#60;summary&#62;</span>,
+            <span>&#60;figure&#62;</span>, <span>&#60;figcaption&#62;</span>,
+            <span>&#60;mark&#62;</span>, <span>&#60;time&#62;</span>, and
+            <span>&#60;progress&#62;</span>. I hope you found this lesson
+            helpful. Thanks for reading!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Artcil -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.bundle.js.map"></script>
+    <script src="../js/jquery.all.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

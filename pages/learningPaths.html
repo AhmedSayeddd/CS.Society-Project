@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csSociety</title>
+    <!-- Bootstrab files (Minified) -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+    <!-- Font Awesom File (Minified)-->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Main Project Style sheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+    <!-- Google Fonts Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script></script>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./learningPaths.html"
+                >Learning Paths</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/explore.html">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="../pages/login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Start Navbar -->
+    <!-- Start Learning Paths -->
+    <section class="learning-paths">
+      <div class="container">
+        <div class="head-of-learning-paths">
+          <h1>Learning Paths</h1>
+          <div class="description">
+            Our content is guided with interactive exercises based on real-world
+            scenarios.
+          </div>
+        </div>
+        <div class="tablist mt-5 d-flex flex-wrap">
+          <!-- data-name -> is a coustome atr -->
+          <span class="item active p-3" data-list=".all">All</span>
+          <span class="item p-3" data-list=".web"> Web </span>
+          <span class="item p-3" data-list=".security"> Cyber Security </span>
+          <span class="item p-3" data-list=".os"> OS </span>
+          <span class="item p-3" data-list=".network"> Networks </span>
+        </div>
+        <div class="paths mt-5 d-grid gap-3">
+          <a class="all web" href="./paths-pages/web-fundamentals.html">
+            <div class="path">
+              <div class="image">
+                <img src="../image/web-path.svg" alt="" />
+              </div>
+              <div class="description p-3">
+                <h2>Web Fundamentals</h2>
+                <p>A pathway to web application security</p>
+                <span class="status done">Done</span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="all security"
+            href="./paths-pages/introdution-to-cyber-security.html"
+          >
+            <div class="path">
+              <div class="image">
+                <img src="../image/introtocybersecurity-path.svg" alt="" />
+              </div>
+              <div class="description p-3">
+                <h2>Introduction to Cyber Security</h2>
+                <p>Learn the core skills required to start</p>
+                <span class="status not-done">Under Building</span>
+              </div>
+            </div>
+          </a>
+          <a class="all os" href="./paths-pages/linux-fundamentals.html">
+            <div class="path">
+              <div class="image">
+                <img src="../image/os-path.svg" alt="" />
+              </div>
+              <div class="description p-3">
+                <h2>Linux Fundamentals</h2>
+                <p>Learning the fundamentals of Linux</p>
+                <span class="status not-done">Under Building</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Learning Paths  -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Bootstrab js files -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.bundle.js.map"></script>
+    <!-- Jquery File (Minified) -->
+    <script src="../js/jquery.all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/learningPaths.js"></script>
+  </body>
+</html>

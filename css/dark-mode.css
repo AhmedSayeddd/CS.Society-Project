@@ -1,0 +1,162 @@
+/* Start Home Page At Dark-Mode */
+
+body.dark-mode {
+  background-color: #171717;
+}
+
+nav.dark-mode {
+  color: #f5f5f5;
+}
+
+nav.dark-mode .navbar-brand {
+  color: white;
+}
+
+nav.dark-mode .navbar-toggler {
+  border-color: white;
+}
+
+nav.dark-mode .bar-icon {
+  color: white;
+}
+
+nav.dark-mode ul a.active {
+  color: white !important;
+}
+
+nav.dark-mode ul a {
+  color: #a3a3a3;
+}
+
+nav.dark-mode ul a:hover {
+  color: white;
+}
+
+nav.dark-mode .login-btn {
+  background-color: white;
+  color: black;
+}
+
+.landing.dark-mode h1,
+.category.dark-mode h1 {
+  color: white;
+}
+
+.articls.dark-mode a span:first-child,
+.category.dark-mode a span:first-child,
+.path.dark-mode .path-courses a {
+  color: white !important;
+}
+
+.articls.dark-mode a:hover span:last-child,
+.category.dark-mode a:hover span:last-child {
+  color: white !important;
+}
+
+footer.dark-mode div {
+  color: white;
+}
+
+/* End Home Page At Dark-Mode */
+
+/* Start Articles Pages At Dark-Mode */
+
+.art.dark-mode .head-of-art .tags a {
+  background-color: #404040;
+}
+
+.art.dark-mode .head-of-art h1,
+.art.dark-mode .info h2,
+.art.dark-mode .info h3,
+.explore.dark-mode .head-of-explore,
+.explore.dark-mode .tags h2,
+.learning-paths.dark-mode h1,
+.path.dark-mode .head-of-path h1,
+.path.dark-mode .introduction-and-overview h2,
+.path.dark-mode .introduction-and-overview h3,
+.art.dark-mode .info h4 {
+  color: white;
+}
+
+.art.dark-mode .head-of-art .tags a,
+.art.dark-mode .info p,
+.art.dark-mode .info ul li,
+.path.dark-mode .introduction-and-overview p,
+.path.dark-mode .introduction-and-overview li,
+.art.dark-mode .info li {
+  color: #d4d4d4;
+}
+
+.art.dark-mode .info .code code span {
+  color: white;
+}
+
+.art.dark-mode .head-of-art .tags li,
+.art.dark-mode .info p {
+  color: #d4d4d4;
+}
+
+/* End Articles Pages At Dark-Mode */
+
+/* Start Login From At Dark-Mode */
+
+.login-form.dark-mode {
+  background-color: #171717;
+}
+.login-form.dark-mode,
+.login-form.dark-mode .form-text {
+  color: white;
+}
+
+.login-form.dark-mode .submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.login-form.dark-mode input {
+  border: none;
+}
+
+.login-form.dark-mode input:focus {
+  box-shadow: none;
+}
+
+/* End Login From At Dark-Mode */
+
+/* Explore At Dark-Mode */
+
+.explore.dark-mode .tags a {
+  background-color: #262626;
+  color: #a3a3a3;
+  border: none;
+}
+
+.explore.dark-mode .tags a:hover {
+  background-color: #a3a3a3;
+  color: #262626;
+}
+
+/* Explore At Dark-Mode */
+
+/* Learnign Pathes At Dark-Mode */
+
+.learning-paths.dark-mode .tablist {
+  color: white;
+}
+
+.learning-paths.dark-mode .tablist .item.active {
+  background-color: transparent;
+}
+
+.learning-paths.dark-mode .tablist .item:hover {
+  background-color: transparent;
+}
+
+.learning-paths.dark-mode .tablist .item.active {
+}
+.learning-paths.dark-mode .paths .path {
+  background-color: #333;
+  color: white;
+}
+
+/* */

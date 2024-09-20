@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNS In Details</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../../css/all.min.css" />
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="stylesheet" href="../../../css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../../../index.html">&#60;\&#62;</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../learningPaths.html"
+                >Learning Paths</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../explore.html">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="../../login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="art">
+      <div class="container">
+        <div class="head-of-art mt-5 mb-4">
+          <h1 class="my-4">DNS in detail</h1>
+          <div class="date">
+            Learn how DNS works and how it helps you access internet services.
+          </div>
+        </div>
+        <div class="info">
+          <h2>What is DNS?</h2>
+          <p>
+            DNS (Domain Name System) provides a simple way for us to communicate
+            with devices on the internet without remembering complex numbers.
+            Much like every house has a unique address for sending mail directly
+            to it, every computer on the internet has its own unique address to
+            communicate with it called an IP address. An IP address looks like
+            the following <code>104.26.10.229</code>, 4 sets of digits ranging
+            from 0 - 255 separated by a period. When you want to visit a
+            website, it's not exactly convenient to remember this complicated
+            set of numbers, and that's where DNS can help. So instead of
+            remembering <code>104.26.10.229</code>, you can remember
+            tryhackme.com instead.
+          </p>
+          <div class="image">
+            <img src="../../../image/DNS1.png" alt="" />
+          </div>
+          <h2>Domain Hierarchy</h2>
+          <div class="image">
+            <img src="../../../image/DNS2.png" alt="" />
+          </div>
+          <h3>TLD (Top-Level Domain)</h3>
+          <p>
+            A TLD is the most righthand part of a domain name. So, for example,
+            the tryhackme.com TLD is .com. There are two types of TLD, gTLD
+            (Generic Top Level) and ccTLD (Country Code Top Level Domain).
+            Historically a gTLD was meant to tell the user the domain name's
+            purpose; for example, a .com would be for commercial purposes, .org
+            for an organisation, .edu for education and .gov for government. And
+            a ccTLD was used for geographical purposes, for example, .ca for
+            sites based in Canada, .co.uk for sites based in the United Kingdom
+            and so on. Due to such demand, there is an influx of new gTLDs
+            ranging from .online , .club , .website , .biz and so many more.
+          </p>
+          <h3>Second-Level Domain</h3>
+          <p>
+            Taking tryhackme.com as an example, the .com part is the TLD, and
+            tryhackme is the Second Level Domain. When registering a domain
+            name, the second-level domain is limited to 63 characters + the TLD
+            and can only use a-z 0-9 and hyphens (cannot start or end with
+            hyphens or have consecutive hyphens).
+          </p>
+          <h3>Subdomain</h3>
+          <p>
+            A subdomain sits on the left-hand side of the Second-Level Domain
+            using a period to separate it; for example, in the name
+            admin.tryhackme.com the admin part is the subdomain. A subdomain
+            name has the same creation restrictions as a Second-Level Domain,
+            being limited to 63 characters and can only use a-z 0-9 and hyphens
+            (cannot start or end with hyphens or have consecutive hyphens). You
+            can use multiple subdomains split with periods to create longer
+            names, such as jupiter.servers.tryhackme.com. But the length must be
+            kept to 253 characters or less. There is no limit to the number of
+            subdomains you can create for your domain name.
+          </p>
+          <h2>DNS Record Types</h2>
+          <p>
+            DNS isn't just for websites though, and multiple types of DNS record
+            exist. We'll go over some of the most common ones that you're likely
+            to come across.
+          </p>
+          <h3>A Record</h3>
+          <p>
+            These records resolve to IPv4 addresses, for example 104.26.10.229
+          </p>
+          <h3>AAAA Record</h3>
+          <p>
+            These records resolve to IPv6 addresses, for example
+            2606:4700:20::681a:be5
+          </p>
+          <h3>CNAME Record</h3>
+          <p>
+            These records resolve to another domain name, for example,
+            TryHackMe's online shop has the subdomain name store.tryhackme.com
+            which returns a CNAME record shops.shopify.com. Another DNS request
+            would then be made to shops.shopify.com to work out the IP address.
+          </p>
+          <h3>MX Record</h3>
+          <p>
+            These records resolve to the address of the servers that handle the
+            email for the domain you are querying, for example an MX record
+            response for tryhackme.com would look something like
+            alt1.aspmx.l.google.com. These records also come with a priority
+            flag. This tells the client in which order to try the servers, this
+            is perfect for if the main server goes down and email needs to be
+            sent to a backup server.
+          </p>
+          <h3>TXT Record</h3>
+          <p>
+            TXT records are free text fields where any text-based data can be
+            stored. TXT records have multiple uses, but some common ones can be
+            to list servers that have the authority to send an email on behalf
+            of the domain (this can help in the battle against spam and spoofed
+            email). They can also be used to verify ownership of the domain name
+            when signing up for third party services.
+          </p>
+          <h2>What happens when you make a DNS request</h2>
+          <div class="image">
+            <img src="../../../image/DNS3.png" alt="" />
+          </div>
+          <ol>
+            <li class="mb-3">
+              When you request a domain name, your computer first checks its
+              local cache to see if you've previously looked up the address
+              recently; if not, a request to your Recursive DNS Server will be
+              made.
+            </li>
+            <li class="mb-3">
+              A Recursive DNS Server is usually provided by your ISP, but you
+              can also choose your own. This server also has a local cache of
+              recently looked up domain names. If a result is found locally,
+              this is sent back to your computer, and your request ends here
+              (this is common for popular and heavily requested services such as
+              Google, Facebook, Twitter). If the request cannot be found
+              locally, a journey begins to find the correct answer, starting
+              with the internet's root DNS servers.
+            </li>
+            <li class="mb-3">
+              The root servers act as the DNS backbone of the internet; their
+              job is to redirect you to the correct Top Level Domain Server,
+              depending on your request. If, for example, you request
+              www.tryhackme.com, the root server will recognise the Top Level
+              Domain of .com and refer you to the correct TLD server that deals
+              with .com addresses.
+            </li>
+            <li class="mb-3">
+              The TLD server holds records for where to find the authoritative
+              server to answer the DNS request. The authoritative server is
+              often also known as the nameserver for the domain. For example,
+              the name server for tryhackme.com is kip.ns.cloudflare.com and
+              uma.ns.cloudflare.com. You'll often find multiple nameservers for
+              a domain name to act as a backup in case one goes down.
+            </li>
+            <li class="mb-3">
+              An authoritative DNS server is the server that is responsible for
+              storing the DNS records for a particular domain name and where any
+              updates to your domain name DNS records would be made. Depending
+              on the record type, the DNS record is then sent back to the
+              Recursive DNS Server, where a local copy will be cached for future
+              requests and then relayed back to the original client that made
+              the request. DNS records all come with a TTL (Time To Live) value.
+              This value is a number represented in seconds that the response
+              should be saved for locally until you have to look it up again.
+              Caching saves on having to make a DNS request every time you
+              communicate with a server.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <script src="../../../js/bootstrap.bundle.js"></script>
+    <script src="../../../js/bootstrap.bundle.js.map"></script>
+    <script src="../../../js/jquery.all.min.js"></script>
+    <script src="../../../js/main.js"></script>
+  </body>
+</html>

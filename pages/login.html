@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Bootstrab files (Minified) -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+    <!-- Font Awesom File (Minified)-->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Main Project Style sheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="login-form needs-validation" novalidate>
+      <div class="logo">
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          required
+        />
+        <!-- <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div> -->
+        <div class="invalid-feedback" id="emailInvalid">
+          Email must include an '@' symbol.
+        </div>
+        <div class="invalid-feedback" id="emailRequired">
+          Please enter your email address.
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="label-par d-flex justify-content-between">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <a class="text-primary" href="#">Forgit Password</a>
+        </div>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          required
+        />
+        <div class="invalid-feedback" id="passwordRequired">
+          Please enter your password.
+        </div>
+        <div class="invalid-feedback" id="passwordInvalid">
+          Please check your password.
+        </div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+      </div>
+      <button type="submit" class="submit-btn btn btn-dark mb-3">Submit</button>
+      <div class="sign-up">
+        New At CS.Society? <a class="text-primary" href="#">Sign Up</a>
+      </div>
+    </form>
+    <!-- Bootstrab js files -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.bundle.js.map"></script>
+    <!-- Jquery File (Minified) -->
+    <script src="../js/jquery.all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/formValidation.js"></script>
+  </body>
+</html>

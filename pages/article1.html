@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction To DNS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./learningPaths.html">Learning Paths</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./explore.html">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="./login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start  Artcil -->
+    <div class="art">
+      <div class="container">
+        <div class="head-of-art mt-5 mb-4">
+          <div class="tags">
+            <a class="pt-1 pb-1 pe-3 px-3 me-2" href="#">Distributed Systems</a>
+            <a class="pt-1 pb-1 pe-3 px-3" href="#">Web Development</a>
+          </div>
+          <h1 class="my-4">Introduction To DNS</h1>
+          <div class="date">March 26, 2023</div>
+        </div>
+        <div class="info">
+          <h2>What is DNS?</h2>
+          <p>
+            DNS (Domain Name System) provides a simple way for us to communicate
+            with devices on the internet without remembering complex numbers.
+            Much like every house has a unique address for sending mail directly
+            to it, every computer on the internet has its own unique address to
+            communicate with it called an IP address. An IP address looks like
+            the following <code>104.26.10.229</code>, 4 sets of digits ranging
+            from 0 - 255 separated by a period. When you want to visit a
+            website, it's not exactly convenient to remember this complicated
+            set of numbers, and that's where DNS can help. So instead of
+            remembering <code>104.26.10.229</code>, you can remember
+            tryhackme.com instead.
+          </p>
+          <h2>Domain Hierarchy</h2>
+          <div class="image">
+            <img src="../image/a168c8511887fff98a6944619c4b5259.png" alt="" />
+          </div>
+          <h3>TLD (Top-Level Domain)</h3>
+          <p>
+            A TLD is the most righthand part of a domain name. So, for example,
+            the tryhackme.com TLD is .com. There are two types of TLD, gTLD
+            (Generic Top Level) and ccTLD (Country Code Top Level Domain).
+            Historically a gTLD was meant to tell the user the domain name's
+            purpose; for example, a .com would be for commercial purposes, .org
+            for an organisation, .edu for education and .gov for government. And
+            a ccTLD was used for geographical purposes, for example, .ca for
+            sites based in Canada, .co.uk for sites based in the United Kingdom
+            and so on. Due to such demand, there is an influx of new gTLDs
+            ranging from .online , .club , .website , .biz and so many more.
+          </p>
+          <h3>Second-Level Domain</h3>
+          <p>
+            Taking tryhackme.com as an example, the .com part is the TLD, and
+            tryhackme is the Second Level Domain. When registering a domain
+            name, the second-level domain is limited to 63 characters + the TLD
+            and can only use a-z 0-9 and hyphens (cannot start or end with
+            hyphens or have consecutive hyphens).
+          </p>
+          <h3>Subdomain</h3>
+          <p>
+            A subdomain sits on the left-hand side of the Second-Level Domain
+            using a period to separate it; for example, in the name
+            admin.tryhackme.com the admin part is the subdomain. A subdomain
+            name has the same creation restrictions as a Second-Level Domain,
+            being limited to 63 characters and can only use a-z 0-9 and hyphens
+            (cannot start or end with hyphens or have consecutive hyphens). You
+            can use multiple subdomains split with periods to create longer
+            names, such as jupiter.servers.tryhackme.com. But the length must be
+            kept to 253 characters or less. There is no limit to the number of
+            subdomains you can create for your domain name.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Artcil -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.bundle.js.map"></script>
+    <script src="../js/jquery.all.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

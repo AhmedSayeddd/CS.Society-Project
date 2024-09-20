@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Websites Work</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../../../css/all.min.css" />
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="stylesheet" href="../../../css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../../../index.html">&#60;\&#62;</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../learningPaths.html"
+                >Learning Paths</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../explore.html">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="../../login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="art">
+      <div class="container">
+        <div class="head-of-art mt-5 mb-4">
+          <h1 class="my-4">How Websites Work</h1>
+          <div class="date">
+            To exploit a website, you first need to know how they are created.
+          </div>
+        </div>
+        <div class="info">
+          <h2>How websites work</h2>
+          <p>
+            By the end of this room, you'll know how websites are created and
+            will be introduced to some basic security issues.
+          </p>
+          <p>
+            When you visit a website, your browser (like Safari or Google
+            Chrome) makes a request to a web server asking for information about
+            the page you're visiting. It will respond with data that your
+            browser uses to show you the page; a web server is just a dedicated
+            computer somewhere else in the world that handles your requests.
+          </p>
+          <div class="image">
+            <img src="../../../image/HowWebsiteWorks1.png" alt="" />
+          </div>
+          <h3>There are two major components that make up a website:</h3>
+          <ol>
+            <li>
+              Front End (Client-Side) - the way your browser renders a website.
+            </li>
+            <li>
+              Back End (Server-Side) - a server that processes your request and
+              returns a response.
+            </li>
+          </ol>
+          <p>
+            There are many other processes involved in your browser making a
+            request to a web server, but for now, you just need to understand
+            that you make a request to a server, and it responds with data your
+            browser uses to render information to you.
+          </p>
+          <h2>HTML</h2>
+          <p>Websites are primarily created using:</p>
+          <ul>
+            <li>HTML, to build websites and define their structure</li>
+            <li>CSS, to make websites look pretty by adding styling options</li>
+            <li>
+              JavaScript, implement complex features on pages using
+              interactivity
+            </li>
+          </ul>
+          <p>
+            HyperText Markup Language (HTML) is the language websites are
+            written in. Elements (also known as tags) are the building blocks of
+            HTML pages and tells the browser how to display content. The code
+            snippet below shows a simple HTML document, the structure of which
+            is the same for every website:
+          </p>
+          <div class="image">
+            <img src="../../../image/HowWebsiteWorks2.png" alt="" />
+          </div>
+          <h2>JavaScript</h2>
+          <p>
+            JavaScript (JS) is one of the most popular coding languages in the
+            world and allows pages to become interactive. HTML is used to create
+            the website structure and content, while JavaScript is used to
+            control the functionality of web pages - without JavaScript, a page
+            would not have interactive elements and would always be static. JS
+            can dynamically update the page in real-time, giving functionality
+            to change the style of a button when a particular event on the page
+            occurs (such as when a user clicks a button) or to display moving
+            animations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <script src="../../../js/bootstrap.bundle.js"></script>
+    <script src="../../../js/bootstrap.bundle.js.map"></script>
+    <script src="../../../js/jquery.all.min.js"></script>
+    <script src="../../../js/main.js"></script>
+  </body>
+</html>

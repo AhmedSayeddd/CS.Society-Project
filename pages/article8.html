@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide to Picking a Language for DevOps</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./learningPaths.html">Learning Paths</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./explore.html">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="./login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start  Artcil -->
+    <div class="art">
+      <div class="container">
+        <div class="head-of-art mt-5 mb-4">
+          <div class="tags">
+            <a class="pt-1 pb-1 pe-3 px-3" href="#">Cheatsheet</a>
+          </div>
+          <h1 class="my-4">Git Cheatsheet</h1>
+          <span class="describtion d-block"
+            >Everything You Need to Know in One Handy Cheatsheet
+          </span>
+        </div>
+        <div class="info">
+          <p>
+            Git is a version control system that allows you to track changes to
+            files and folders. It’s a powerful tool that can be used for
+            everything from small personal projects to large-scale enterprise
+            applications.
+          </p>
+          <p>
+            This guide is a quick reference to the most common Git commands.
+            It’s not meant to be a comprehensive guide to Git, but rather a
+            quick reference to the most common commands.
+          </p>
+          <p>
+            Here’s the revised git cheatsheet with improved section titles and
+            reorganized:
+          </p>
+          <h2>Setup and Configuration</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Initialize a new Git repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">init</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Clone and create a local copy of a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">clone</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">ur</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Configure global Git settings</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">setting_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">valu</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Configure local Git settings for a specific repo</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--local</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">setting_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">valu</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># --------------- Advanced ------------------</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Show a summary of your Git configuration settings</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--list</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Set a custom text editor for Git messages</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">core.editor</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">"</span><span style="color:#e7ee98">&lt;editor_command&gt;</span><span style="color:#dee492">"</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create a Git command alias</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">alias.</span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">shortcu</span><span style="color:#f6f6f4">t</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">comman</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Enable automatic colorization of Git output</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">color.ui</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">auto</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Cache Git credentials for a certain amount of time</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">credential.helper</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">'</span><span style="color:#e7ee98">cache --timeout=&lt;seconds&gt;</span><span style="color:#dee492">'</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Configure git to detect specific types of whitespace errors</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">core.whitespace</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">option</span><span style="color:#f6f6f4">s</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Automatically prune remote-tracking branches when fetching updates</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">fetch.prune</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">true</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Set a custom diff tool for Git</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">diff.tool</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">too</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Set a custom merge tool for Git</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">merge.tool</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">too</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Compare changes using a custom diff tool</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">difftool</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Resolve merge conflicts with a custom merge tool</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">mergetool</span></span></code></pre>
+          </div>
+          <h2>File Operations</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Show working tree status</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">status</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Add files to the staging area</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">add</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">file</span><span style="color:#f6f6f4">(</span><span style="color:#62e884">s</span><span style="color:#f6f6f4">)</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Remove files from working tree and staging area</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rm</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">file</span><span style="color:#f6f6f4">(</span><span style="color:#62e884">s</span><span style="color:#f6f6f4">)</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Move or rename a file</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">mv</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">old_fil</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">new_fil</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Commit changes with a message</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">commit</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-m</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">"</span><span style="color:#e7ee98">commit message</span><span style="color:#dee492">"</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show differences between working tree and last commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">diff</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># --------------- Advanced ------------------</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Assume a tracked file is unchanged</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">update-index</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--assume-unchanged</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">fil</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Restore normal behavior of tracking changes</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">update-index</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--no-assume-unchanged</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">fil</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show differences between two commits</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">diff</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_id</span><span style="color:#f286c4">1&gt;</span><span style="color:#e7ee98">..</span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_id</span><span style="color:#f286c4">2&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Unstage a file, but keep in the working directory</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rm</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--cached</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">file_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Branching and Merging</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># List all branches</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create a new branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Switch to a specific branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">checkout</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Merge a branch into the current branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">merge</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Delete a specific branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-d</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># List all remote branches</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-r</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># --------------- Advanced ------------------</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># List branches with additional information</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-vv</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create a new branch based on a remote branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">checkout</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-b</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#e7ee98">/</span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Cancel merge in case of conflicts</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">merge</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--abort</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Rebase the current branch onto another branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rebase</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Cancel an ongoing rebase operation</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rebase</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--abort</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Interactive rebase for edit, squash, re-order or drop commits</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rebase</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-i</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Rebase commits in the current branch onto a remote branch interactively</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rebase</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-i</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#e7ee98">/</span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Remote Repositories</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># List remote repositories</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Add a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">add</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">ur</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Fetch from a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">fetch</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Pull changes from a remote branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">pull</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Push changes to a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">push</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">local_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Remove a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rm</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Display information about a specific remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">show</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show the tracking branches for remote repositories</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">show</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--verbose</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># --------------- Advanced -------------------</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Fetch updates from all remote repositories</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">update</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Force-push changes to a remote repository, overwriting remote history</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">push</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--force</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">local_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Push all tags to a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">push</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--tags</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Rename a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">rename</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">old_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">new_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Change the URL of a remote repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">set-url</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">new_ur</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Remove stale remote-tracking branches</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">remote</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">prune</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># List all remote branches that have been merged into the current branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-r</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--merged</span></span>
+                <span class="line"><span style="color:#7b7f8b"># List all remote branches not yet merged into the current branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-r</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--no-merged</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Fetch updates from a remote repository and prune obsolete remote-tracking branches</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">fetch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-p</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Track a remote branch and set up the local branch to automatically sync with it</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--track</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#e7ee98">/</span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Set an existing local branch to track a remote branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-u</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#e7ee98">/</span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Push a branch to a remote repository and set it to track the remote branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">push</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-u</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">local_branc</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Remove the tracking association between a local and a remote branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">branch</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--unset-upstream</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Commit History</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Show commit history</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Display a condensed commit history</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--oneline</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show branching commit history</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--graph</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Filter commit history by author</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--author=</span><span style="color:#f286c4">&lt;</span><span style="color:#bf9eee">author_name</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show commit history since specific date</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--since=</span><span style="color:#f286c4">&lt;</span><span style="color:#bf9eee">date</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show commit history until specific date</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--until=</span><span style="color:#f286c4">&lt;</span><span style="color:#bf9eee">date</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Tags</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># List all tags</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">tag</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create a new tag at a specific commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">tag</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">tag_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create an annotated tag with a message</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">tag</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-a</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">tag_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-m</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">"</span><span style="color:#e7ee98">tag message</span><span style="color:#dee492">"</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Delete a specific tag</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">tag</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-d</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">tag_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Delete a specific remote tag</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">push</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">remote_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--delete</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">tag_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show information about a specific tag</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">show</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">tag_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Stashes</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Temporarily save changes in the working tree</span></span>
+            <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">stash</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">save</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">"</span><span style="color:#e7ee98">stash message</span><span style="color:#dee492">"</span></span>
+            <span class="line"><span style="color:#7b7f8b"># List all stashes</span></span>
+            <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">stash</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">list</span></span>
+            <span class="line"><span style="color:#7b7f8b"># Apply changes from a specific stash</span></span>
+            <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">stash</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">apply</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">stas</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+            <span class="line"><span style="color:#7b7f8b"># Remove a specific stash</span></span>
+            <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">stash</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">drop</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">stas</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+            <span class="line"><span style="color:#7b7f8b"># Remove all stashes</span></span>
+            <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">stash</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">clear</span></span></code></pre>
+          </div>
+          <h2>Cherry-Picking</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Apply a specific commit from one branch to another</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">cherry-pick</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Commit Management</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Modify the latest commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">commit</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--amend</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create a new commit that undoes changes from a previous commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">revert</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Discard changes and move HEAD to a specific commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">reset</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--hard</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Move HEAD to a specific commit, but preserve staged changes</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">reset</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--soft</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show a record of all changes made to the local repository head</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">reflog</span></span></code></pre>
+          </div>
+          <h2>Submodules, Subtrees, and Advanced Submodules</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Add a submodule to the current repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">submodule</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">add</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">repository_ur</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">pat</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Initialize and update all submodules recursively</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">submodule</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">update</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--init</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--recursive</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Add a subtree to the current repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">subtree</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">add</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--prefix=</span><span style="color:#f286c4">&lt;</span><span style="color:#bf9eee">path</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">repository_ur</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Initialize the submodules in the repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">submodule</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">init</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Update the submodules to their latest commits</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">submodule</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">update</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Execute a specific command in each submodule</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">submodule</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">foreach</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">comman</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Unregister a submodule</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">submodule</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">deinit</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">pat</span><span style="color:#f6f6f4">h</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Hooks and Automation, and Diff and Merge Tools</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Locate hooks directory in the Git repository (usually in .git/hooks/)</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">hooks</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Script names for specific hooks that can be added to the hooks directory</span></span>
+                <span class="line"><span style="color:#62e884">pre-commit,</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">post-commit,</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">pre-push,</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">post-merge,</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">etc.</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Make a hook script executable to ensure it's triggered when necessary</span></span>
+                <span class="line"><span style="color:#62e884">chmod</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">+x</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">hook_scrip</span><span style="color:#f6f6f4">t</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Work with Patches</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Generate a patch file for a specific commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">format-patch</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Apply a patch to the current branch</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">apply</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">patch_fil</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Apply a patch using the "git am" (apply mailbox) command</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">am</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">patch_fil</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Collaboration</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Generate a request-pull summary with the changes between two commits</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">request-pull</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">start_commi</span><span style="color:#f6f6f4">t</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">end_commi</span><span style="color:#f6f6f4">t</span><span style="color:#f286c4">&gt;</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">ur</span><span style="color:#f6f6f4">l</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Summarize the commit history, listing authors and their contributions</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">shortlog</span></span>
+                <span class="line"><span style="color:#7b7f8b"># List all files tracked by Git</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">ls-files</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Search for a specified pattern in files tracked by Git</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">grep</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">patter</span><span style="color:#f6f6f4">n</span><span style="color:#f286c4">&gt;</span></span></code></pre>
+          </div>
+          <h2>Bisecting, Debugging, and Performance Issues</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Begin a bisect session to find the commit that introduced a bug</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">bisect</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">start</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Mark a commit as "bad," indicating it contains the bug</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">bisect</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">bad</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Mark a commit as "good," indicating it does not contain the bug</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">bisect</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">good</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">commit_i</span><span style="color:#f6f6f4">d</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># End the bisect session and return to the original branch/commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">bisect</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">reset</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Verify the integrity of the Git repository</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">fsck</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Run garbage collection to optimize the repository's performance</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">gc</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Remove untracked files and directories (use with caution)</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">clean</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-df</span></span></code></pre>
+          </div>
+          <h2>Tips and Tricks</h2>
+          <div class="code">
+            <pre
+              class="astro-code dracula-soft"
+              is:raw=""
+              style="background-color: #282a36; overflow-x: auto"
+              tabindex="0"
+            ><code><span class="line"><span style="color:#7b7f8b"># Interactively choose parts (hunks) of files to stage</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">add</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-p</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Show the commit history and associated patches for a specific file</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-p</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">file_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Customize the format of the git log output</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--pretty=format:</span><span style="color:#dee492">"</span><span style="color:#e7ee98">%h - %an, %ar : %s</span><span style="color:#dee492">"</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Find text in commit messages (useful for locating specific changes)</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--grep=</span><span style="color:#dee492">"</span><span style="color:#e7ee98">&lt;text&gt;</span><span style="color:#dee492">"</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Quickly view the changes in the working directory since the last commit</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">diff</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--stat</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Display the branch history with decoration to see where branches have split or merged</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">log</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--oneline</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--decorate</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--graph</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Stash changes in the working tree, including untracked files</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">stash</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">save</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-u</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Create an empty commit, useful while testing branch protection rules</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">commit</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--allow-empty</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-m</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">"</span><span style="color:#e7ee98">Empty commit message</span><span style="color:#dee492">"</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Set the git output pager to quit when the output is less than one screen, and not clear the screen after displaying</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">core.pager</span><span style="color:#f6f6f4"> </span><span style="color:#dee492">'</span><span style="color:#e7ee98">less -RFX</span><span style="color:#dee492">'</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Use Git's auto-correct feature to fix mistyped commands</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--global</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">help.autocorrect</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">1</span></span>
+                <span class="line"><span style="color:#7b7f8b"># List aliases for Git commands</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">config</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--get-regexp</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">alias</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#7b7f8b"># Perform a dry run of merging without actually merging branches</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">merge</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--no-commit</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--no-ff</span><span style="color:#f6f6f4"> </span><span style="color:#f286c4">&lt;</span><span style="color:#e7ee98">branch_nam</span><span style="color:#f6f6f4">e</span><span style="color:#f286c4">&gt;</span></span>
+                <span class="line"><span style="color:#7b7f8b"># Show a tree-like representation of the repo's structure</span></span>
+                <span class="line"><span style="color:#62e884">git</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">ls-tree</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">--name-only</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-r</span><span style="color:#f6f6f4"> </span><span style="color:#bf9eee">-t</span><span style="color:#f6f6f4"> </span><span style="color:#e7ee98">HEAD</span></span></code></pre>
+          </div>
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Artcil -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.bundle.js.map"></script>
+    <script src="../js/jquery.all.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
